@@ -1,3 +1,5 @@
+document.getElementById("projectsone").style.display = 'none';
+
 function clickReveal1() {
     var x = document.getElementById("projectsone");
     if (x.style.display === "none") {
@@ -5,8 +7,9 @@ function clickReveal1() {
     } else {
       x.style.display = "none";
     }
-  } 
+  }
 
+  document.getElementById("projectstwo").style.display = 'none';
 
   function clickReveal2() {
     var x = document.getElementById("projectstwo");
@@ -21,7 +24,7 @@ function clickReveal1() {
 
   function changeImage1() {
     if (document.getElementById("eyeIcon").src == "icons\eye-closed3.svg"){
-        document.getElementById("eyeIcon").src = "icons\show.png";
+        document.getElementById("eyeIcon").src = "icons\show.svg";
     } else {
         document.getElementById("eyeIcon").src = "icons\eye-closed3.svg";
     }
