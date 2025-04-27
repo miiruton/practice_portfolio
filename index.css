@@ -47,6 +47,7 @@ nav {
     font-weight: 700;
     padding-top: 0.5rem;
     font-family: "Flamenco", system-ui;
+    grid-area: a;
 }
 
 .navigation-items {
@@ -80,6 +81,44 @@ nav a.active {
 nav a:hover {
     border-block-end: 0.5rem solid #B682E4;
     color: #B682E4;
+}
+
+#bio-page {
+    display: grid;
+    width: 100%;
+    grid-template:
+    "a a a" 100px
+    "b c d" 740px
+    "e e e" 100px / 1fr 1fr 1fr;
+}
+
+#bio-page > .bio-title {
+    grid-area: a;
+}
+
+#bio-page > .column-left {
+    grid-area: b;
+}
+
+#bio-page > .bio-center {
+    grid-area: c;
+    justify-content: center;
+    display: flex;
+   
+}
+
+#bio-page > .column-right {
+    grid-area: d;
+}
+
+#bio-page h2 {
+    width: 100%;
+    text-align: center;
+}
+.bio-pic {
+    justify-self: center;
+    width: 200px;
+    height: 200px;
 }
 
 .inline-img {
