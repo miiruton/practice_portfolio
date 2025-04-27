@@ -21,17 +21,15 @@ body {
     color:white;
     margin: 0px auto 48px auto;
     width: 1320px;
-}
-
-header {
     display: flex;
-    justify-content: space-between;
-    
-
+    flex-direction: column;
 }
+
+
 
 h1 {
     font-size: 3.5rem;
+    font-weight: 700;
     font-family: "Flamenco", system-ui;
 }
 
@@ -41,17 +39,31 @@ h2 {
 }
 
 nav {
+    display: flex;
+    justify-content: space-between;
     font-size: 1.8rem;
-    padding-top: 4.2rem;
+    font-weight: 700;
+    padding-top: 0.5rem;
     font-family: "Flamenco", system-ui;
 }
 
-h1, nav {
-    
-    font-weight: 700;
-    line-height: 2;
-}
+.navigation-items {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+  }
 
+/*.navigation-item {
+    margin: var(--spacing-1);
+  }
+
+#logo {
+    
+  }
+*/
 nav a {
     color: white;
     text-decoration: none;
@@ -91,6 +103,9 @@ nav a.active {
   }
 
   #projectsone {
+    display: none;
+  }
+  #projectstwo {
     display: none;
   }
  
