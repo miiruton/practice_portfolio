@@ -1,4 +1,4 @@
-function clickRevealone() {
+function clickReveal1() {
     var x = document.getElementById("projectsone");
     if (x.style.display === "none") {
       x.style.display = "block";
@@ -8,7 +8,7 @@ function clickRevealone() {
   } 
 
 
-  function clickRevealtwo() {
+  function clickReveal2() {
     var x = document.getElementById("projectstwo");
     if (x.style.display === "none") {
       x.style.display = "block";
@@ -19,7 +19,7 @@ function clickRevealone() {
 
 
 
-  function changeImage() {
+  function changeImage1() {
     if (document.getElementById("eyeIcon").src == "icons\eye-closed3.svg"){
         document.getElementById("eyeIcon").src = "icons\show.png";
     } else {
