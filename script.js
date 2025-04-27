@@ -21,7 +21,7 @@ function clickRevealone() {
 
   function changeImage() {
     if (document.getElementById("eyeIcon").src == "icons\eye-closed3.svg"){
-        document.getElementById("eyeIcon").src = "icons\show.svg";
+        document.getElementById("eyeIcon").src = "icons\show.png";
     } else {
         document.getElementById("eyeIcon").src = "icons\eye-closed3.svg";
     }
