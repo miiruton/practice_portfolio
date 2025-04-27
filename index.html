@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/73ab87f73a.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bitter:ital,wght@0,100..900;1,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Flamenco:wght@300;400&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
 <body>
     
       <nav>
-        <h1 id="logo">M<span class="special">i</span>lt<span class="special">o</span>n C<span class="special">a</span>st<span class="special">r</span>o</h1>
+        <h1 id="logo">Port<span class="special">f</span>olio Project</h1>
      
       <ul class="navigation-items">
         <li class="navigation-item"><a href="index.html" class="active">projects</a></li>
@@ -26,7 +27,7 @@
     
     <div class="main-container">
 
-        <section class="project-title">
+        <section class="project">
           <h2>Project 1
          <img class="inline-img" src="icons/eye-closed3.svg" onclick="clickReveal1(); changeImage1();" id="eyeIcon"></h2>
         
@@ -44,11 +45,30 @@
          </div>
          </section>
 
-         <section class="project-title">
+         <section class="project">
           <h2 id="projectdetail">Project 2
-         <img class="inline-img" src="icons/eye-closed3.svg" onclick="clickReveal2(); changeImage2();" id="eyeIcon2"></h2>
-        
+         <span class="show-icon" onclick="clickReveal2(); changeImage2();" id="eyeIcon2"></span></h2>
+         
          <div  id="projectstwo">
+         <div class="item">
+            <a href="#" class="item_link">
+              <div class="item_bg"></div>
+      
+              <div class="item_title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+      
+            </a>
+         </div>
+         </div>
+         </section>
+
+         <section class="project">
+          <div class="proj-title">
+          <h2 id="projectdetail">Project 3</h2>
+         <i class="fa-regular fa-eye-slash" onclick="clickReveal3(); changeImage3();" id="eyeIcon3"></i>
+        </div>
+         <div  id="projectsthree">
          <div class="item">
             <a href="#" class="item_link">
               <div class="item_bg"></div>

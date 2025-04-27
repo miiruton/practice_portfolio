@@ -25,8 +25,6 @@ body {
     flex-direction: column;
 }
 
-
-
 h1 {
     font-size: 3.5rem;
     font-weight: 700;
@@ -34,11 +32,12 @@ h1 {
 }
 
 h1 .special {
-    color:rgb(235, 216, 112);
+    color:#9e4f84;
 }
 h2 {
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-family: "Flamenco", system-ui;
+    display: inline;
 }
 
 nav {
@@ -59,43 +58,29 @@ nav {
     margin-left: auto;
   }
 
-/*.navigation-item {
-    margin: var(--spacing-1);
-  }
 
-#logo {
-    
-  }
-*/
 nav a {
     color: rgb(242, 227, 252);
     text-decoration: none;
     margin: 0 0 0 8px;
     transition: all 0.3s;
-    padding: 0 0.5rem 0.5rem 0;   
-
-    
+    padding: 0 0.5rem 0.5rem 0;    
 }
+
+
 nav a.active {
     color: #B682E4;
     text-decoration: none;
     margin: 0 0 0 8px;
     transition: all 0.5s;
     /*padding: 1rem;   */
-
-    
-  }
-  nav a:hover {
-    border-block-end: 0.5rem solid #B682E4;
-
-    color: #B682E4;
-
+   
 }
 
-/*.icon {
-    height: 30px;
-    
-}*/
+nav a:hover {
+    border-block-end: 0.5rem solid #B682E4;
+    color: #B682E4;
+}
 
 .inline-img {
     height: 2.188rem;
@@ -103,12 +88,39 @@ nav a.active {
     margin: 0 0.125em;
     padding: 0;
     vertical-align: baseline;
-  }
+}
 
-  #projectsone {
+#projectsone {
     display: none;
-  }
-  #projectstwo {
+}
+
+#projectstwo {
     display: none;
-  }
+}
+
+#projectsthree {
+    display: none;
+}
  
+i {
+    display: inline;
+    vertical-align: baseline;
+    height: 30px;
+    width: 30px;
+    color: #ffffff;
+}
+
+
+.show-icon {
+    background: url("\icons\eye-closed3.svg");
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+
+  .hide-icon {
+    background: url("icons\show.svg");
+    height: 20px;
+    width: 20px;
+    display: block;
+}
