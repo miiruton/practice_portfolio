@@ -20,7 +20,7 @@ body {
     background-color: #404438;
     color: #b6bcbc;
     margin: 0px auto 48px auto;
-    width: 1320px;
+    max-width: 1320px;
     display: flex;
     flex-direction: column;
 }
@@ -187,12 +187,26 @@ i {
     display: block;
 }
 
+@media only screen and (max-width: 1000px) {
+    #bio-page {
+      display: flex;
+      flex-direction: column;
+      width: 800px;
+      padding: 40px;
+    }
+  
+
+  .bio-pic {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 600px) {
     #bio-page {
       display: flex;
       flex-direction: column;
-      width: 570px;
-      padding: 20px;
+      width: 500px;
+      padding: 40px;
     }
   
 
