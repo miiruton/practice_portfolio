@@ -15,10 +15,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background: linear-gradient(#412F53, #542a4b);
-    background-attachment: fixed;
-    /*background-color: #412F53;*/
-    color: rgb(242, 227, 252);
+    /*background: linear-gradient(#412F53, #542a4b);
+    background-attachment: fixed;*/
+    background-color: #404438;
+    color: #b6bcbc;
     margin: 0px auto 48px auto;
     width: 1320px;
     display: flex;
@@ -32,7 +32,7 @@ h1 {
 }
 
 h1 .special {
-    color:#9e4f84;
+    color:#717744;
 }
 h2 {
     font-size: 2.6rem;
@@ -61,7 +61,7 @@ nav {
 
 
 nav a {
-    color: rgb(242, 227, 252);
+    color: #b6bcbc;
     text-decoration: none;
     margin: 0 0 0 8px;
     transition: all 0.3s;
@@ -70,7 +70,7 @@ nav a {
 
 
 nav a.active {
-    color: #B682E4;
+    color: #BCBD8B;
     text-decoration: none;
     margin: 0 0 0 8px;
     transition: all 0.5s;
@@ -79,21 +79,23 @@ nav a.active {
 }
 
 nav a:hover {
-    border-block-end: 0.5rem solid #B682E4;
-    color: #B682E4;
+    border-block-end: 0.5rem solid #BCBD8B;
+    color: #BCBD8B;
 }
 
 #bio-page {
     display: grid;
     width: 100%;
     grid-template:
-    "a a a" 100px
-    "b c d" 740px
-    "e e e" 100px / 1fr 1fr 1fr;
+    "a a a" 130px
+    "b c d" 420px
+    "e e e" 200px / 1fr 1fr 1fr;
 }
 
 #bio-page > .bio-title {
     grid-area: a;
+    padding-top: 0;
+    
 }
 
 #bio-page > .column-left {
@@ -111,14 +113,31 @@ nav a:hover {
     grid-area: d;
 }
 
+#bio-page > .bio-bottom {
+    grid-area: e;
+}
+
 #bio-page h2 {
     width: 100%;
     text-align: center;
+    font-size: 3.8rem;
+    margin: 0;
+    
 }
+
+#bio-page h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding: auto;
+    font-family: "Flamenco", system-ui;
+}
+
 .bio-pic {
     justify-self: center;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
 }
 
 .inline-img {
