@@ -187,6 +187,17 @@ i {
     display: block;
 }
 
+.social {
+    display: inline-block;
+}
+.findme {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+
+}
+
 @media only screen and (max-width: 1000px) {
     #bio-page {
       display: flex;
@@ -195,10 +206,15 @@ i {
       padding: 40px;
     }
   
-
   .bio-pic {
     display: none;
   }
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      width: 800px;
+      padding: 40px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -212,5 +228,12 @@ i {
 
   .bio-pic {
     display: none;
+  }
+
+  .main-container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 40px;
   }
 }
