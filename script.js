@@ -1,44 +1,44 @@
-document.getElementById("projectsone").style.display = 'none';
+
 
 function clickReveal1() {
-    var x = document.getElementById("projectsone");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
+  var x = document.getElementById("projectsone");
+  if (x.style.display === "none" || x.style.display === "") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
   }
+}
 
-document.getElementById("projectstwo").style.display = 'none';
+
 
 function clickReveal2() {
   var x = document.getElementById("projectstwo");
-  if (x.style.display === "none") {
+  if (x.style.display === "none" || x.style.display === "") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
-} 
+}
 
 
-document.getElementById("projectsthree").style.display = 'none';
+
 
 function clickReveal3() {
   var x = document.getElementById("projectsthree");
-  if (x.style.display === "none") {
+  if (x.style.display === "none" || x.style.display === "") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
-} 
+}
 
 
 function changeImage1() {
-  if (document.getElementById("eyeIcon").src == "icons\eye-closed3.svg"){
-     document.getElementById("eyeIcon").src = "icons\show.svg";
+  if (document.getElementById("eyeIcon").src == "icons/eye-closed3.svg") {
+    document.getElementById("eyeIcon").src = "icons/show.svg";
   } else {
-     document.getElementById("eyeIcon").src = "icons\eye-closed3.svg";
-    }
+    document.getElementById("eyeIcon").src = "icons/eye-closed3.svg";
+  }
 }
 
 
@@ -84,3 +84,4 @@ myButton.addEventListener("click", function() {
   }
   isFirstImage = !isFirstImage;
 });*/
+

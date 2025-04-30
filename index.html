@@ -1,86 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="https://kit.fontawesome.com/73ab87f73a.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bitter:ital,wght@0,100..900;1,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Flamenco:wght@300;400&display=swap" rel="stylesheet">
-    <title>Milton Castro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://kit.fontawesome.com/73ab87f73a.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bitter:ital,wght@0,100..900;1,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Flamenco:wght@300;400&display=swap"
+    rel="stylesheet">
+  <title>Milton Castro</title>
+
 </head>
+
 <body>
-    
-      <nav>
-        <h1 id="logo">Port<span class="special">f</span>olio.</h1>
-     
-      <ul class="navigation-items">
-        <li class="navigation-item"><a href="index.html" class="active">projects</a></li>
-        <li class="navigation-item"><a href="contact.html">contact</a></li>
-        <li class="navigation-item"><a href="me.html">me</a></li>
-        <li class="navigation-item"><a href="">store</a></li>
-      </ul>
-     </nav>
-    
-    <div class="main-container">
 
-        <section class="project">
-          <h2>Project 1
-         <img class="inline-img" src="icons/eye-closed3.svg" onclick="clickReveal1(); changeImage1();" id="eyeIcon"></h2>
-        
-         <div  id="projectsone">
-         <div class="item">
-            <a href="#" class="item_link">
-              <div class="item_bg"></div>
-      
-              <div class="item_title">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-      
-            </a>
-         </div>
-         </div>
-         </section>
+  <nav>
+    <h1 id="logo">Port<span class="special">f</span>olio.</h1>
 
-         <section class="project">
-          <h2 id="projectdetail">Project 2
-         <span class="show-icon" onclick="clickReveal2(); changeImage2();" id="eyeIcon2"></span></h2>
-         
-         <div  id="projectstwo">
-         <div class="item">
-            <a href="#" class="item_link">
-              <div class="item_bg"></div>
-      
-              <div class="item_title">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-      
-            </a>
-         </div>
-         </div>
-         </section>
+    <ul class="navigation-items">
+      <li class="navigation-item"><a href="index.html" class="active">projects</a></li>
+      <li class="navigation-item"><a href="contact.html">contact</a></li>
+      <li class="navigation-item"><a href="me.html">me</a></li>
+      <li class="navigation-item"><a href="">store</a></li>
+    </ul>
+  </nav>
 
-         <section class="project">
-          <div class="proj-title">
-          <h2 id="projectdetail">Project 3</h2>
-         <i class="fa-regular fa-eye-slash" onclick="clickReveal3(); changeImage3();" id="eyeIcon3"></i>
+  <div class="main-container">
+
+    <section class="project">
+      <h2>Project 1
+        <img class="inline-img" src="icons/eye-closed3.svg" onclick="clickReveal1(); changeImage1();" id="eyeIcon">
+      </h2>
+
+      <div id="projectsone">
+        <div class="item">
+          <a href="#" class="item_link">
+            <div class="item_bg"></div>
+
+            <div class="item_title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </div>
+
+          </a>
         </div>
-         <div  id="projectsthree">
-         <div class="item">
-            <a href="#" class="item_link">
-              <div class="item_bg"></div>
-      
-              <div class="item_title">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-      
-            </a>
-         </div>
-         </div>
-         </section>
+      </div>
+    </section>
+
+    <section class="project">
+      <h2 id="projectdetail">Project 2
+        <span class="show-icon" onclick="clickReveal2(); changeImage2();" id="eyeIcon2"></span>
+      </h2>
+
+      <div id="projectstwo">
+        <div class="item">
+          <a href="#" class="item_link">
+            <div class="item_bg"></div>
+
+            <div class="item_title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </div>
+
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project">
+      <div class="proj-title">
+        <h2 id="projectdetail">Project 3</h2>
+        <i class="fa-regular fa-eye-slash" onclick="clickReveal3(); changeImage3();" id="eyeIcon3"></i>
+      </div>
+      <div id="projectsthree">
+        <div class="item">
+          <a href="#" class="item_link">
+            <div class="item_bg"></div>
+
+            <div class="item_title">
+              <div class="box"></div>
+
+              <script type="module">
+                import { animate, press, hover } from "https://cdn.jsdelivr.net/npm/motion@12.9.0/+esm"
+
+                const gestureState = new WeakMap()
+
+                const transition = { type: "spring", stiffness: 500, damping: 25 }
+
+                const initialState = {
+                  isHovered: false,
+                  isPressed: false,
+                }
+
+                function setGesture(element, update) {
+                  const state = gestureState.get(element) || { ...initialState }
+                  const newState = { ...state, ...update }
+                  gestureState.set(element, newState)
+
+                  let scale = 1
+                  if (newState.isPressed) {
+                    scale = 0.8
+                  } else if (newState.isHovered) {
+                    scale = 1.2
+                  }
+
+                  animate(element, { scale }, transition)
+                }
+
+                hover(".box", (element) => {
+                  setGesture(element, { isHovered: true })
+                  return () => setGesture(element, { isHovered: false })
+                })
+
+                press(".box", (element) => {
+                  setGesture(element, { isPressed: true })
+                  return () => setGesture(element, { isPressed: false })
+                })
+              </script>
+              <div class="box"></div>
+
+              <script type="module">
+                import { animate, press, hover } from "https://cdn.jsdelivr.net/npm/motion@12.9.0/+esm"
+
+                const gestureState2 = new WeakMap()
+
+                const transition2 = { type: "spring", stiffness: 500, damping: 25 }
+
+                const initialState2 = {
+                  isHovered: false,
+                  isPressed: false,
+                }
+
+                function setGesture(element, update) {
+                  const state = gestureState.get(element) || { ...initialState }
+                  const newState = { ...state, ...update }
+                  gestureState.set(element, newState)
+
+                  let scale = 1
+                  if (newState.isPressed) {
+                    scale = 0.8
+                  } else if (newState.isHovered) {
+                    scale = 1.2
+                  }
+
+                  animate(element, { scale }, transition)
+                }
+
+                hover(".box", (element) => {
+                  setGesture(element, { isHovered: true })
+                  return () => setGesture(element, { isHovered: false })
+                })
+
+                press(".box", (element) => {
+                  setGesture(element, { isPressed: true })
+                  return () => setGesture(element, { isPressed: false })
+                })
+              </script>
+              <div class="box"></div>
+
+              <script type="module">
+                import { animate, press, hover } from "https://cdn.jsdelivr.net/npm/motion@12.9.0/+esm"
+
+                const gestureState3 = new WeakMap()
+
+                const transition3 = { type: "spring", stiffness: 500, damping: 25 }
+
+                const initialState3 = {
+                  isHovered: false,
+                  isPressed: false,
+                }
+
+                function setGesture(element, update) {
+                  const state = gestureState.get(element) || { ...initialState }
+                  const newState = { ...state, ...update }
+                  gestureState.set(element, newState)
+
+                  let scale = 1
+                  if (newState.isPressed) {
+                    scale = 0.8
+                  } else if (newState.isHovered) {
+                    scale = 1.2
+                  }
+
+                  animate(element, { scale }, transition)
+                }
+
+                hover(".box", (element) => {
+                  setGesture(element, { isHovered: true })
+                  return () => setGesture(element, { isHovered: false })
+                })
+
+                press(".box", (element) => {
+                  setGesture(element, { isPressed: true })
+                  return () => setGesture(element, { isPressed: false })
+                })
+              </script>
+            </div>
+
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+
   </div>
 </body>
+
 </html>
