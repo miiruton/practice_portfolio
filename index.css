@@ -64,6 +64,13 @@ nav {
     margin: var(--spacing-1);
   }
   
+  .item {
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    justify-content: center;
+    
+  }
 
 nav a {
     color: #b6bcbc;
@@ -199,6 +206,17 @@ i {
 }
 
 @media only screen and (max-width: 1000px) {
+
+    .item {
+        display: flex;
+        width: 600px;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        flex-direction: column;
+        
+      }
+
     #bio-page {
       display: flex;
       flex-direction: column;
@@ -218,6 +236,16 @@ i {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .item {
+        display: flex;
+        width: 500px;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        
+      }
+
     #bio-page {
       display: flex;
       flex-direction: column;
@@ -244,6 +272,7 @@ i {
     border-radius: 15% 5%;
     cursor: pointer;
     display: inline-block;
+    margin: 1rem;
 }
 
 .box:focus-visible {
