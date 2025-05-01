@@ -66,11 +66,18 @@ nav {
   
   .item {
     display: flex;
-    width: 1200px;
     align-items: center;
     justify-content: center;
     
   }
+
+.back-button a {
+    text-decoration: none;
+    border-block-end: 0.3rem solid #BCBD8B;
+    color: #BCBD8B;
+    font-family: "Flamenco", system-ui;
+    font-size: 1.5rem;    
+}
 
 nav a {
     color: #b6bcbc;
@@ -204,6 +211,99 @@ i {
     align-content: center;
 
 }
+.item-menu-container {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.project-details {
+    display: flex;
+}
+
+.image-container {
+    display: flex;
+}
+
+.main-container-details {
+    display: flex;
+    }
+
+.main-image {
+    display: inline-block;
+    width: 500px;
+    border-radius: 10% 2%;
+}
+
+.main-description {
+    display: flex;
+    text-align: left;
+    padding: 2rem;
+}
+
+.project-title {
+   
+    width: 100%;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.menu-icon {
+    width: 250px;
+    height: 250px;
+    border-radius: 15% 5%;
+    justify-self: center;
+
+}
+.box1 {
+    width: 250px;
+    height: 250px;
+    background-image: url("img\birdkeeper-icon.JPG");
+    background-color: #86946c;
+    border-radius: 15% 5%;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1rem;
+}
+
+
+.box2 {
+    width: 250px;
+    height: 250px;
+    background-color: #86946c;
+    border-radius: 15% 5%;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1rem;
+}
+
+.box3 {
+    width: 250px;
+    height: 250px;
+    background-color: #86946c;
+    border-radius: 15% 5%;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1rem;
+}
+
+.box1:focus-visible {
+    outline: 2px solid #8df0cc;
+    outline-offset: 2px;
+}
+
+.box2:focus-visible {
+    outline: 2px solid #8df0cc;
+    outline-offset: 2px;
+}
+
+.box3:focus-visible {
+    outline: 2px solid #8df0cc;
+    outline-offset: 2px;
+}
 
 @media only screen and (max-width: 1000px) {
 
@@ -264,18 +364,4 @@ i {
   width: 500px;
   padding: 40px;
   }
-}
-.box {
-    width: 250px;
-    height: 425px;
-    background-color: #86946c;
-    border-radius: 15% 5%;
-    cursor: pointer;
-    display: inline-block;
-    margin: 1rem;
-}
-
-.box:focus-visible {
-    outline: 2px solid #8df0cc;
-    outline-offset: 2px;
 }
