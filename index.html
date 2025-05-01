@@ -20,7 +20,7 @@
 <body>
 
   <nav>
-    <h1 id="logo">Port<span class="special">f</span>olio.</h1>
+    <h1 id="logo">Mil<span class="special">t</span>on Cas<span class="special">tr</span>o.</h1>
 
     <ul class="navigation-items">
       <li class="navigation-item"><a href="index.html" class="active">projects</a></li>
@@ -33,73 +33,33 @@
   <div class="main-container">
 
     <section class="project">
-      <h2>Project 1
-        <img class="inline-img" src="icons/eye-closed3.svg" onclick="clickReveal1(); changeImage1();" id="eyeIcon">
+      <h2 class="project-reveal" onclick="clickReveal1();"><img class="inline-img" src="icons/show.svg"
+          id="eyeIcon">Music Posters
+
       </h2>
 
       <div id="projectsone">
-        <div class="item">
-          <a href="#" class="item_link">
-            <div class="item_bg"></div>
-
-            <div class="item_title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </div>
-
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="project">
-      <h2 id="projectdetail">Project 2
-        <span class="show-icon" onclick="clickReveal2(); changeImage2();" id="eyeIcon2"></span>
-      </h2>
-
-      <div id="projectstwo">
-        <div class="item">
-          <a href="#" class="item_link">
-            <div class="item_bg"></div>
-
-            <div class="item_title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </div>
-
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="project">
-      <div class="proj-title">
-        <h2 id="projectdetail">Project 3</h2>
-        <i class="fa-regular fa-eye-slash" onclick="clickReveal3(); changeImage3();" id="eyeIcon3"></i>
-      </div>
-      <div id="projectsthree">
         <div class="item-menu-container">
           <div class="item">
-            <a href="details.html" class="item_link">
-
-              <div class="box1"><img src="img\birdkeeper-icon.JPG" class="menu-icon"></div>
+            <a href="sondre_opera_details.html">
+              <div class="box4"><img src="img/operahouse-icon.jpg" class="menu-icon"></div>
             </a>
             <script type="module">
               import { animate, press, hover } from "https://cdn.jsdelivr.net/npm/motion@12.9.0/+esm"
 
-              const gestureState = new WeakMap()
+              const gestureState4 = new WeakMap()
 
-              const transition = { type: "spring", stiffness: 500, damping: 25 }
+              const transition4 = { type: "spring", stiffness: 500, damping: 25 }
 
-              const initialState = {
+              const initialState4 = {
                 isHovered: false,
                 isPressed: false,
               }
 
               function setGesture(element, update) {
-                const state = gestureState.get(element) || { ...initialState }
+                const state = gestureState4.get(element) || { ...initialState4 }
                 const newState = { ...state, ...update }
-                gestureState.set(element, newState)
+                gestureState4.set(element, newState)
 
                 let scale = 1
                 if (newState.isPressed) {
@@ -108,7 +68,293 @@
                   scale = 1.2
                 }
 
-                animate(element, { scale }, transition)
+                animate(element, { scale }, transition4)
+              }
+
+              hover(".box4", (element) => {
+                setGesture(element, { isHovered: true })
+                return () => setGesture(element, { isHovered: false })
+              })
+
+              press(".box4", (element) => {
+                setGesture(element, { isPressed: true })
+                return () => setGesture(element, { isPressed: false })
+              })
+            </script>
+
+          </div>
+
+          <div class="item">
+            <a href="sondre_neuro_details.html">
+
+              <div class="box5"><img src="img\neuro-icon.jpg" class="menu-icon"></div>
+            </a>
+            <script type="module">
+              import { animate, press, hover } from "https://cdn.jsdelivr.net/npm/motion@12.9.0/+esm"
+
+              const gestureState5 = new WeakMap()
+
+              const transition5 = { type: "spring", stiffness: 500, damping: 25 }
+
+              const initialState5 = {
+                isHovered: false,
+                isPressed: false,
+              }
+
+              function setGesture(element, update) {
+                const state = gestureState5.get(element) || { ...initialState5 }
+                const newState = { ...state, ...update }
+                gestureState5.set(element, newState)
+
+                let scale = 1
+                if (newState.isPressed) {
+                  scale = 0.8
+                } else if (newState.isHovered) {
+                  scale = 1.2
+                }
+
+                animate(element, { scale }, transition5)
+              }
+
+              hover(".box5", (element) => {
+                setGesture(element, { isHovered: true })
+                return () => setGesture(element, { isHovered: false })
+              })
+
+              press(".box5", (element) => {
+                setGesture(element, { isPressed: true })
+                return () => setGesture(element, { isPressed: false })
+              })
+            </script>
+          </div>
+          <div class="item">
+            <a href="sondre_extravaganza_details.html">
+
+              <div class="box6"><img src="img\extravaganza-icon.jpg" class="menu-icon"></div>
+            </a>
+            <script type="module">
+              import { animate, press, hover } from "https://cdn.jsdelivr.net/npm/motion@12.9.0/+esm"
+
+              const gestureState6 = new WeakMap()
+
+              const transition6 = { type: "spring", stiffness: 500, damping: 25 }
+
+              const initialState6 = {
+                isHovered: false,
+                isPressed: false,
+              }
+
+              function setGesture(element, update) {
+                const state = gestureState6.get(element) || { ...initialState6 }
+                const newState = { ...state, ...update }
+                gestureState6.set(element, newState)
+
+                let scale = 1
+                if (newState.isPressed) {
+                  scale = 0.8
+                } else if (newState.isHovered) {
+                  scale = 1.2
+                }
+
+                animate(element, { scale }, transition6)
+              }
+
+              hover(".box6", (element) => {
+                setGesture(element, { isHovered: true })
+                return () => setGesture(element, { isHovered: false })
+              })
+
+              press(".box6", (element) => {
+                setGesture(element, { isPressed: true })
+                return () => setGesture(element, { isPressed: false })
+              })
+            </script>
+          </div>
+        </div>
+    </section>
+
+    <section class="project">
+      <h2 class="project-reveal" onclick="clickReveal2();"><img class="inline-img" src="icons/show.svg" id="eyeIcon">RPG
+        Art
+
+      </h2>
+
+      <div id="projectstwo">
+
+        <div class="item-menu-container">
+          <div class="item">
+            <a href="calebxessek_detail.html">
+              <div class="box7"><img src="img\calebxessek-icon.jpg" class="menu-icon"></div>
+            </a>
+            <script type="module">
+              import { animate, press, hover } from "https://cdn.jsdelivr.net/npm/motion@12.9.0/+esm"
+
+              const gestureState7 = new WeakMap()
+
+              const transition7 = { type: "spring", stiffness: 500, damping: 25 }
+
+              const initialState7 = {
+                isHovered: false,
+                isPressed: false,
+              }
+
+              function setGesture(element, update) {
+                const state = gestureState7.get(element) || { ...initialState7 }
+                const newState = { ...state, ...update }
+                gestureState7.set(element, newState)
+
+                let scale = 1
+                if (newState.isPressed) {
+                  scale = 0.8
+                } else if (newState.isHovered) {
+                  scale = 1.2
+                }
+
+                animate(element, { scale }, transition7)
+              }
+
+              hover(".box7", (element) => {
+                setGesture(element, { isHovered: true })
+                return () => setGesture(element, { isHovered: false })
+              })
+
+              press(".box7", (element) => {
+                setGesture(element, { isPressed: true })
+                return () => setGesture(element, { isPressed: false })
+              })
+            </script>
+
+          </div>
+
+          <div class="item">
+            <a href="mercurio_details.html">
+
+              <div class="box8"><img src="img\mercurio-icon.jpg" class="menu-icon"></div>
+            </a>
+            <script type="module">
+              import { animate, press, hover } from "https://cdn.jsdelivr.net/npm/motion@12.9.0/+esm"
+
+              const gestureState8 = new WeakMap()
+
+              const transition8 = { type: "spring", stiffness: 500, damping: 25 }
+
+              const initialState8 = {
+                isHovered: false,
+                isPressed: false,
+              }
+
+              function setGesture(element, update) {
+                const state = gestureState8.get(element) || { ...initialState8 }
+                const newState = { ...state, ...update }
+                gestureState8.set(element, newState)
+
+                let scale = 1
+                if (newState.isPressed) {
+                  scale = 0.8
+                } else if (newState.isHovered) {
+                  scale = 1.2
+                }
+
+                animate(element, { scale }, transition8)
+              }
+
+              hover(".box8", (element) => {
+                setGesture(element, { isHovered: true })
+                return () => setGesture(element, { isHovered: false })
+              })
+
+              press(".box8", (element) => {
+                setGesture(element, { isPressed: true })
+                return () => setGesture(element, { isPressed: false })
+              })
+            </script>
+          </div>
+          <div class="item">
+            <a href="forest_ghosties_details.html">
+
+              <div class="box9"><img src="img\forest_ghosties-icon.jpg" class="menu-icon"></div>
+            </a>
+            <script type="module">
+              import { animate, press, hover } from "https://cdn.jsdelivr.net/npm/motion@12.9.0/+esm"
+
+              const gestureState9 = new WeakMap()
+
+              const transition9 = { type: "spring", stiffness: 500, damping: 25 }
+
+              const initialState9 = {
+                isHovered: false,
+                isPressed: false,
+              }
+
+              function setGesture(element, update) {
+                const state = gestureState9.get(element) || { ...initialState9 }
+                const newState = { ...state, ...update }
+                gestureState9.set(element, newState)
+
+                let scale = 1
+                if (newState.isPressed) {
+                  scale = 0.8
+                } else if (newState.isHovered) {
+                  scale = 1.2
+                }
+
+                animate(element, { scale }, transition9)
+              }
+
+              hover(".box9", (element) => {
+                setGesture(element, { isHovered: true })
+                return () => setGesture(element, { isHovered: false })
+              })
+
+              press(".box9", (element) => {
+                setGesture(element, { isPressed: true })
+                return () => setGesture(element, { isPressed: false })
+              })
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="project">
+      <div class="proj-title">
+        <h2 class="project-reveal" onclick="clickReveal3();"><img class="inline-img" src="icons/show.svg"
+            id="eyeIcon">Little Moments of Magic</h2>
+
+      </div>
+      <div id="projectsthree">
+        <div class="item-menu-container">
+          <div class="item">
+            <a href="birdkeeper_details.html">
+
+              <div class="box1"><img src="img\birdkeeper-icon.JPG" class="menu-icon"></div>
+            </a>
+            <script type="module">
+              import { animate, press, hover } from "https://cdn.jsdelivr.net/npm/motion@12.9.0/+esm"
+
+              const gestureState1 = new WeakMap()
+
+              const transition1 = { type: "spring", stiffness: 500, damping: 25 }
+
+              const initialState1 = {
+                isHovered: false,
+                isPressed: false,
+              }
+
+              function setGesture(element, update) {
+                const state = gestureState1.get(element) || { ...initialState1 }
+                const newState = { ...state, ...update }
+                gestureState1.set(element, newState)
+
+                let scale = 1
+                if (newState.isPressed) {
+                  scale = 0.8
+                } else if (newState.isHovered) {
+                  scale = 1.2
+                }
+
+                animate(element, { scale }, transition1)
               }
 
               hover(".box1", (element) => {
@@ -125,9 +371,52 @@
           </div>
 
           <div class="item">
-            <a href="details.html" class="item_link">
+            <a href="abracadabra_details.html">
 
-              <div class="box2"><img src="img\birdkeeper-icon.JPG" class="menu-icon"></div>
+              <div class="box2"><img src="img\abracadabra-icon.jpg" class="menu-icon"></div>
+            </a>
+            <script type="module">
+              import { animate, press, hover } from "https://cdn.jsdelivr.net/npm/motion@12.9.0/+esm"
+
+              const gestureState2 = new WeakMap()
+
+              const transition2 = { type: "spring", stiffness: 500, damping: 25 }
+
+              const initialState2 = {
+                isHovered: false,
+                isPressed: false,
+              }
+
+              function setGesture(element, update) {
+                const state = gestureState2.get(element) || { ...initialState2 }
+                const newState = { ...state, ...update }
+                gestureState2.set(element, newState)
+
+                let scale = 1
+                if (newState.isPressed) {
+                  scale = 0.8
+                } else if (newState.isHovered) {
+                  scale = 1.2
+                }
+
+                animate(element, { scale }, transition2)
+              }
+
+              hover(".box2", (element) => {
+                setGesture(element, { isHovered: true })
+                return () => setGesture(element, { isHovered: false })
+              })
+
+              press(".box2", (element) => {
+                setGesture(element, { isPressed: true })
+                return () => setGesture(element, { isPressed: false })
+              })
+            </script>
+          </div>
+          <div class="item">
+            <a href="mother_details.html">
+
+              <div class="box3"><img src="img\mother_icon.png" class="menu-icon"></div>
             </a>
             <script type="module">
               import { animate, press, hover } from "https://cdn.jsdelivr.net/npm/motion@12.9.0/+esm"
@@ -156,62 +445,19 @@
                 animate(element, { scale }, transition)
               }
 
-              hover(".box2", (element) => {
+              hover(".box3", (element) => {
                 setGesture(element, { isHovered: true })
                 return () => setGesture(element, { isHovered: false })
               })
 
-              press(".box2", (element) => {
+              press(".box3", (element) => {
                 setGesture(element, { isPressed: true })
                 return () => setGesture(element, { isPressed: false })
               })
             </script>
 
-            <div class="item">
-              <a href="details.html" class="item_link">
-
-                <div class="box3"><img src="img\birdkeeper-icon.JPG" class="menu-icon"></div>
-              </a>
-              <script type="module">
-                import { animate, press, hover } from "https://cdn.jsdelivr.net/npm/motion@12.9.0/+esm"
-
-                const gestureState = new WeakMap()
-
-                const transition = { type: "spring", stiffness: 500, damping: 25 }
-
-                const initialState = {
-                  isHovered: false,
-                  isPressed: false,
-                }
-
-                function setGesture(element, update) {
-                  const state = gestureState.get(element) || { ...initialState }
-                  const newState = { ...state, ...update }
-                  gestureState.set(element, newState)
-
-                  let scale = 1
-                  if (newState.isPressed) {
-                    scale = 0.8
-                  } else if (newState.isHovered) {
-                    scale = 1.2
-                  }
-
-                  animate(element, { scale }, transition)
-                }
-
-                hover(".box3", (element) => {
-                  setGesture(element, { isHovered: true })
-                  return () => setGesture(element, { isHovered: false })
-                })
-
-                press(".box3", (element) => {
-                  setGesture(element, { isPressed: true })
-                  return () => setGesture(element, { isPressed: false })
-                })
-              </script>
-
-            </div>
           </div>
+        </div>
     </section>
   </div>
   </div>

@@ -10,7 +10,6 @@ function clickReveal1() {
 }
 
 
-
 function clickReveal2() {
   var x = document.getElementById("projectstwo");
   if (x.style.display === "none" || x.style.display === "") {
@@ -19,8 +18,6 @@ function clickReveal2() {
     x.style.display = "none";
   }
 }
-
-
 
 
 function clickReveal3() {
@@ -41,12 +38,6 @@ function changeImage1() {
   }
 }
 
-
-function changeImage2() {
-  var icon = document.getElementById("eyeIcon2");
-  icon.classList.toggle('show-icon');
-  icon.classList.toggle('hide-icon');
-}
 
 /*function changeImage2() {
   if (document.getElementById("eyeIcon2").src == "icons\eye-closed3.svg"){
